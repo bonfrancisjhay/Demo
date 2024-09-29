@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    text-align: justify;
+}
+summary {
+    cursor: pointer;
+}
+.credits {
+    color: rgba(7, 161, 223, 0.8);
+}
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(image/co.jpg);
+    background-size: cover;
+    background-position: center;
+}   
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+}
+.logo {
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.logo:hover{
+    color: rgba(7, 161, 223, 0.8);
+    text-shadow: 0 0 25px rgba(7, 161, 223, 0.8),
+                 0 0 50px rgba(7, 161, 223, 0.8);
+    transform: scale(1.1);
+}
+span {
+    color: rgba(7, 161, 223, 0.8);
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0,3s ease;
+    text-decoration: none;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: rgba(7, 161, 223, 0.8);
+    border-bottom: 3px solid  rgba(7, 161, 223, 0.8) ;
+}
+.phi {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.vid {
+    color: rgba(7, 161, 223, 0.8);
+}
+.bon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+.bon-content a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="background" id="homes">
+        <div class="navbar">
+        </div>
+        <div class="phi">
+            <h1>Title: Phishing Awareness: Recognize, Resist, Report</h1>
+            <br>
+            <p>This module aims to educate users about phishing, a prevalent cyber threat, and equip them with the knowledge and skills to recognize, resist, and report phishing attempts effectively.</p>
+            <br>
+            <h3>Introduction to Phishing</h3>
+            <br>
+            <p>Phishing is a type of cyber attack in which attackers, commonly referred to as "phishers," attempt to deceive individuals or organizations into providing sensitive information, such as usernames, passwords, credit card numbers, or other personal or financial information. This deception is typically carried out through fraudulent emails, text messages, or websites that appear to be from legitimate sources, such as banks, social media platforms, or government agencies.The goal of phishing attacks is to trick recipients into believing that the communication is legitimate, often by using tactics like urgent language, fake logos, and spoofed email addresses. Once the recipient is deceived and provides the requested information, the attackers can use it for various malicious purposes, including identity theft, financial fraud, or unauthorized access to accounts or systems</p>
+            <br>
+            <p>Phishing is a significant threat for several reasons:</p>
+            <br>
+            <details> Phishing attacks are easy to execute and can be carried out by individuals with minimal technical expertise. Phishing kits, which contain pre-made phishing templates and tools, are readily available on the dark web, making it accessible to a wide range of cybercriminals<summary><span>Widespread Availability</span></summary></details>
+            <br>
+            <details>Phishing attacks often use sophisticated tactics to deceive recipients into believing that the communication is legitimate. This can include spoofed email addresses, fake logos, urgent language, and social engineering techniques tailored to the recipient's interests or concerns.<summary><span>Deceptive Tactics </span></summary></details>
+            <br>
+            <details> Phishing attacks are successful because they prey on human psychology and exploit common vulnerabilities, such as curiosity, fear, or trust. Even cautious individuals can fall victim to a well-crafted phishing email or website, especially if it closely mimics a legitimate communication.<summary><span>High Success Ratess</span></summary></details>
+            <br>
+            <details> Phishing attacks are primarily motivated by financial gain. By tricking individuals into providing sensitive information, such as usernames, passwords, or credit card numbers, attackers can steal money, commit identity theft, or engage in fraudulent activities.<summary><span>Financial Gain</span></summary></details>
+            <br>
+            <details>Phishing attacks can result in data breaches, where sensitive information is compromised and potentially exposed to unauthorized parties. This can have severe consequences for individuals, businesses, and organizations, including financial loss, reputational damage, and legal repercussions.<summary><span>Data Breaches </span></summary></details>
+            <br>
+            <details> Phishing attacks often impersonate trusted entities, such as banks, social media platforms, or government agencies. This exploitation of trust makes it more likely that recipients will comply with the attacker's requests, increasing the effectiveness of the attack.<summary><span>Exploitation of Trust</span></summary></details>
+            <br>
+            <details> Phishing tactics continue to evolve and adapt to changes in technology and user behavior. Attackers regularly innovate new techniques to bypass security measures and exploit emerging trends, such as the rise of remote work and mobile device usage.<summary><span>Evolution and Adaptation</span></summary></details>
+            <br>
+            <h3>How Phishing Works</h3>
+            <br>
+            <p>The psychology behind phishing attacks is rooted in exploiting human emotions, cognitive biases, and social tendencies to manipulate individuals into taking specific actions that benefit the attacker. Understanding these psychological principles is crucial for both attackers and defenders in the realm of cybersecurity.</p>
+            <br>
+            <p>Here are some key psychological aspects exploited in phishing attacks</p>
+            <br>
+            <ol>
+                <li><span>Fear and Urgency</span></li>
+                <li><span>Curiosity</span></li>
+                <li><span>Trust and Authority</span></li>
+                <li><span>Reciprocity</span></li>
+                <li><span>Social Proof</span></li>
+                <li><span>Scarcity</span></li>
+            </ol>
+            <br>
+            <h3>Types Of Phishing</h3>
+            <br>
+            <details> In standard phishing attacks, cybercriminals send out large volumes of emails to a broad audience, often using lists of email addresses obtained from sources such as public directories, purchased databases, or previous data breaches. These emails typically cast a wide net, aiming to deceive as many recipients as possible into clicking on malicious links, downloading malware-infected attachments, or providing sensitive information.<summary><span>Mass Emailing (Standard Phishing)</span></summary></details>
+            <br>
+            <details> Spear phishing involves crafting highly targeted and personalized emails that are tailored to specific individuals or organizations. Unlike mass phishing, spear phishing emails are carefully researched and customized to exploit the recipient's interests, roles, relationships, or recent activities. This personalized approach increases the likelihood of success by making the emails appear more credible and relevant to the recipient, thereby bypassing traditional security measures.<summary><span>Spear Phishing</span></summary></details>
+            <br>
+            <details> Whaling attacks target high-profile individuals within organizations, such as executives, senior managers, or key decision-makers. These attacks often impersonate CEOs, CFOs, or other top executives, using spoofed email addresses and convincing language to trick employees into performing actions such as transferring funds, disclosing sensitive information, or initiating wire transfers. Whaling attacks can have devastating financial and reputational consequences for organizations.<summary><span>Whaling (CEO Fraud)</span></summary></details>
+            <br>
+            <details> Clone phishing involves creating counterfeit copies of legitimate emails, such as newsletters, notifications, or invoices, and then sending them to targeted recipients. These counterfeit emails typically contain slight modifications or alterations, such as replacing legitimate links or attachments with malicious ones. By mimicking trusted communications, clone phishing attacks exploit the recipient's familiarity with the original sender to deceive them into taking harmful actions.<summary><span>Clone Phishing</span></summary></details>
+            <br>
+            <details> Vishing attacks involve using phone calls to deceive individuals into providing sensitive information or performing actions, such as transferring funds or disclosing account credentials. Vishing attackers often use spoofed caller IDs, impersonate trusted entities (e.g., banks, government agencies), and employ social engineering techniques to manipulate victims into complying with their requests. Vishing attacks can be particularly effective due to the persuasive nature of human voice communication.<summary><span>Vishing (Voice Phishing)</span></summary></details>
+            <br>
+            <details> Smishing attacks leverage text messages (SMS) to deceive recipients into clicking on malicious links, downloading malware-infected files, or providing sensitive information. Smishing messages typically impersonate legitimate entities or services, such as banks, retailers, or delivery companies, and prompt recipients to take immediate action by claiming urgent issues or enticing offers. Smishing attacks exploit the widespread use of mobile devices and the inherent trust associated with text messaging.<summary><span>Smishing (SMS Phishing)</span></summary></details>
+            <br>
+            <h3>Consequences of Falling Victim to Phishing</h3>
+            <br>
+            <ul>
+                <li>Financial loss</li>
+                <li>Identity theft</li>
+                <li>Data breaches</li>
+                <li>Reputational damage to individuals and organizations</li>
+            </ul>
+            <br>
+            <h3>Best Practices for Phishing Prevention</h3>
+            <br>
+            <details> Before clicking on any links or downloading attachments, verify the sender's email address or the URL of the website. Be cautious of suspicious or unfamiliar addresses, and hover over links to see the actual destination before clicking.<summary><span>Verify the Source</span></summary></details>
+            <br>
+            <details> Be skeptical of emails or messages that create a sense of urgency or pressure you to take immediate action. Phishing emails often use urgent language to trick recipients into making hasty decisions without fully evaluating the situation.<summary><span>Beware of Urgency</span></summary></details>
+            <br>
+            <details> Be cautious of unsolicited emails, messages, or phone calls requesting personal or financial information. Legitimate organizations typically do not request sensitive information via email or text message, especially without prior contact.<summary><span>Avoid Unsolicited Requests</span></summary></details>
+            <br>
+            <details> Ensure that your operating system, web browser, and security software are up to date with the latest patches and updates. Outdated software may contain vulnerabilities that attackers can exploit to compromise your system.<summary><span>Keep Software Updated</span></summary></details>
+            <br>
+            <details> Create strong, unique passwords for your online accounts and avoid using the same password across multiple accounts. Consider using a reputable password manager to securely store and manage your passwords.<summary><span>Use Strong Passwords</span></summary></details>
+            <br>
+            <details> Enable two-factor authentication whenever possible to add an extra layer of security to your accounts. 2FA requires you to provide a second form of verification, such as a one-time code sent to your phone, in addition to your password.<summary><span>Enable Two-Factor Authentication (2FA)</span></summary></details>
+            <br>
+            <details> Exercise caution when using public Wi-Fi networks, as they may be insecure and prone to eavesdropping. Avoid accessing sensitive information or logging into accounts with sensitive data when connected to public Wi-Fi.<summary><span>Be Wary of Public Wi-Fi</span></summary></details>
+            <br>
+            <details> Stay informed about the latest phishing trends and cybersecurity threats by regularly reading reputable cybersecurity blogs, news websites, and resources. Knowledge is your best defense against online threats.<summary><span>Educate Yourself</span></summary></details>
+            <br>
+            <details> If you receive a phishing email or encounter a suspicious website, report it to the appropriate authorities or the organization being impersonated. Reporting phishing attempts helps protect others from falling victim to similar attacks.<summary><span>Report Suspicious Activity</span></summary></details>
+            <br>
+            <details> If something seems too good to be true or feels suspicious, trust your instincts and proceed with caution. It's better to err on the side of caution than to fall victim to a phishing attack or other online scam.<summary><span>Trust Your Instincts</span></summary></details>
+            <br>
+            <h3>How to report phishing emails to IT/security teams</h3>
+            <br>
+            <details>Do not reply to the phishing email, click on any links, or download any attachments. Responding to or interacting with the email could further compromise your security or confirm to the attacker that your email address is active.<summary><span>Do Not Respond </span></summary></details>
+   <br>
+   <details> Instead, forward the phishing email to your organization's IT/security team or designated email address for reporting security incidents. Most organizations have established procedures and email addresses specifically for reporting suspicious emails.<summary><span>Forward the Email</span></summary></details>
+   <br>
+   <details> When forwarding the email, include the full email header information. The email header contains valuable metadata, including the sender's IP address, which can help IT/security teams investigate the source of the phishing email and take appropriate action.<summary><span>Include Header Information</span></summary></details>
+   <br>
+   <details> In the body of the forwarded email, provide any additional context or information that may be helpful for the IT/security team's investigation. This could include details such as when you received the email, whether you interacted with it, and any observations or suspicions you may have.<summary><span>Provide Context</span></summary></details>
+   <br>
+   <details>If the phishing email contains suspicious attachments, do not open or download them. Forward the email to the IT/security team without interacting with the attachments. Opening malicious attachments could infect your device with malware or ransomware.<summary><span>Use Caution with Attachments </span></summary></details>
+   <br>
+   <details> After forwarding the phishing email to the IT/security team, delete it from your inbox and any other folders. Deleting the email helps prevent accidental interactions with the phishing content and reduces the risk of others within your organization falling victim to the same attack.<summary><span>Delete the Email</span></summary></details>
+   <br>
+   <details> Follow your organization's reporting procedures and guidelines for reporting security incidents, including phishing emails. Some organizations may have specific reporting forms or systems in place for reporting security incidents, so be sure to adhere to those protocols.<summary><span>Follow Reporting Procedures</span></summary></details>
+   <br>
+   <details>Remain vigilant for future phishing emails and continue to report any suspicious emails promptly to your IT/security team. Reporting phishing emails helps protect your organization's network, data, and users from cyber threats.<summary><span>Stay Vigilant </span></summary></details>
+            <br>
+            <h3>Phishing Awareness Video</h3>
+            <br>
+            <video controls src="Rob's Phishy Friday!  -  Phishing Awareness Training Video.mp4" width="500px"></video>
+            <br>
+            <br>
+            <p>Credits to the rightful owner of this video <a class="credits" href="https://www.youtube.com/@usecure3725">@usecure3725</a></p>
+            <br>
+            <br>
+            <p>I Hope You Learn Something From us <a class="vid" href="homes.html#exercises">Click Here To Test Your Knowledge</a></p>
+            <br>
+            <br>
+            <br>    
+
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="bon">
+        <p>Copyright @2024 Com<span>Security</span>
+            <div class="bons">
+                <a href="https://www.facebook.com/profile.php?id=61559777832365&sk=about"><img src="image/facebook (2).png" alt=""></a>
+                <a href="mailto:cmscrtbon@gmail.com"><img src="image/mail (2).png" alt=""></a>
+                <a href="https://www.instagram.com/comsecurity2024/"><img src="image/instagram (2).png" alt=""></a>
+            </div>
+        <div class="bon-content">
+            <a href="homes.html#homes">Home</a>
+            <a href="homes.html#abouts">About</a>
+            <a href="homes.html#courses">Module</a>
+            <a href="homes.html#exercises">Exercises</a>
+        </div>
+    </div>
+</footer>
+</html>

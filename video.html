@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorial</title>       
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+     /* Home Page */
+
+.background {
+    width: 100%;
+    height: 50vw;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(image/co.jpg);
+    background-size: cover;
+    background-position: center;
+}   
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.logo:hover{
+    color: rgba(7, 161, 223, 0.8);
+    text-shadow: 0 0 25px rgba(7, 161, 223, 0.8),
+                 0 0 50px rgba(7, 161, 223, 0.8);
+    transform: scale(1.1);
+}
+span {
+    color: rgba(7, 161, 223, 0.8);
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0,3s ease;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: rgba(7, 161, 223, 0.8);
+    border-bottom: 3px solid  rgba(7, 161, 223, 0.8) ;
+}
+video {
+    margin-left: 400px;
+    margin-top: 100px;
+
+}
+.credits {
+    margin-top: 30px;
+    color: white;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+.credits a {
+    color:rgba(152, 226, 255, 0.8);
+}
+</style>
+<body>
+    <div class="background" id="homes">
+        <div class="navbar">
+            <h2 class="logo">Com<span>Security</span></h2   >
+            <ul>
+                <li><a href="homes.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="module.html">Module</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+            </ul>
+        </div>
+        <video controls src="Installing Antivirus_ A Step by Step Guide How to Tutorial.mp4" width="500px"></video>
+        <div class="credits">
+            <p>Credits to the rightful owner of this video <a href="">@Cyber-Guardian</a></p>
+        </div>
+    </div>
+</body>
+</html>

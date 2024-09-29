@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antivirus Software Quiz</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.background {
+    width: 100%;
+    height: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(image/co.jpg);
+    background-size: cover;
+    background-position: center;
+}   
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.logo:hover{
+    color: rgba(7, 161, 223, 0.8);
+    text-shadow: 0 0 25px rgba(7, 161, 223, 0.8),
+                 0 0 50px rgba(7, 161, 223, 0.8);
+    transform: scale(1.1);
+}
+span {
+    color: rgba(7, 161, 223, 0.8);
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0,3s ease;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: rgba(7, 161, 223, 0.8);
+    border-bottom: 3px solid  rgba(7, 161, 223, 0.8) ;
+}
+.one {
+    height: 90%;
+    width: 50vw;
+    background: white;
+    margin: auto;
+}
+.one-title {
+    display: grid;
+    place-items: center;
+}
+.one-quiz h4 {
+    margin-top: 20px;
+}
+input {
+    margin-left: 20px;
+}
+label {
+    margin-left: 10px;
+}
+.click {
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    background : rgba(7, 161, 223, 0.8);
+    letter-spacing: 1px;
+    transition: 0,3s ease;
+    border: 2px solid transparent;
+}
+.click:hover {
+    background : rgba(7, 161, 223, 0.8);
+    color: white;
+    border: 2px solid black;
+}
+.bon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+.bon-content a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="background" id="homes">
+        <div class="navbar">
+        </div>
+        <div class="one">
+            <div class="one-title">
+                <h2>Antivirus Software Quiz</h2>
+            </div>
+            <div class="one-quiz">
+                <p class="js-score"></p>    
+                <h4>Q1. What is Antivirus Software?</h4>
+                <br>
+                <input type="radio" name="question1" id="correct1"><label>A. Is a program design to detect viruses</label>
+                <br>
+                <input type="radio" name="question1"><label>B. Is a program design to detect computer</label>
+                <br>
+                <input type="radio" name="question1"><label>C. Is a program design to detect wifi</label>
+                <br>
+                <h4>Q2. Which of the following is not types of malware?</h4>
+                <br>
+                <input type="radio" name="question2" id="correct2"><label>A. Tupperware</label>
+                <br>
+                <input type="radio" name="question2"><label>B. Ransomware</label>
+                <br>
+                <input type="radio" name="question2"><label>C. Spyware</label>
+                <br>
+                <h4>Q3. Disables victims access to data until ransom is paid</h4>
+                <br>
+                <input type="radio" name="question3"><label>A. Tupperware</label>
+                <br>
+                <input type="radio" name="question3" id="correct3"><label>B. Ransomware</label>
+                <br>
+                <input type="radio" name="question3"><label>C. Spyware</label>
+                <br>
+                <h4>Q4. Make changes to files that are native to the OS</h4>
+                <br>
+                <input type="radio" name="question4" id="correct4"><label>A. Fileless Malware</label>
+                <br>
+                <input type="radio" name="question4"><label>B. Spyware</label>
+                <br>
+                <input type="radio" name="question4"><label>C. Adware</label>
+                <br>
+                <h4>Q5. Collects user activity data without their knowledge</h4>
+                <br>
+                <input type="radio" name="question5"><label>A. Fileless Malware</label>
+                <br>
+                <input type="radio" name="question5" id="correct5"><label>B. Spyware</label>
+                <br>
+                <input type="radio" name="question5"><label>C. Adware</label>
+                <br>
+                <h4>Q6. Spreads through a network by replicating itself</h4>
+                <br>
+                <input type="radio" name="question6" id="correct6"><label>A. Worms</label>
+                <br>
+                <input type="radio" name="question6"><label>B. Bots</label>
+                <br>
+                <input type="radio" name="question6"><label>C. Trojans</label>
+                <br>
+                <h4>Q7. Which of the following is not part of scanning option?</h4>
+                <br>
+                <input type="radio" name="question7"><label>A. Quick Scan</label>
+                <br>
+                <input type="radio" name="question7"><label>B. Custom Scan</label>
+                <br>
+                <input type="radio" name="question7" id="correct7"><label>C. QR Scan</label>
+                <br>
+                <h4>Q8. Most Antivirus Software offers an option to automatically download</h4>
+                <br>
+                <input type="radio" name="question8"><label>A. Schedule Regular Scans</label>
+                <br>
+                <input type="radio" name="question8" id="correct8"><label>B.Keep Antivirus Software Up-to-Date</label>
+                <br>
+                <input type="radio" name="question8"><label>C. Practice Safe Browsing Habits</label>
+                <br>
+                <h4>Q9. Which of the following is not part of importance of Antivirus</h4>
+                <br>
+                <input type="radio" name="question9"><label>A. Data Loss</label>
+                <br>
+                <input type="radio" name="question9"><label>B. Identity Theft</label>
+                <br>
+                <input type="radio" name="question9" id="correct9"><label>C. Keyloggers</label>
+                <br>
+                <h4>Q10. Which of the following is not part of importance of Antivirus</h4>
+                <br>
+                <input type="radio" name="question10"><label>A. Data Loss</label>
+                <br>
+                <input type="radio" name="question10"><label>B. System Damage</label>
+                <br>
+                <input type="radio" name="question10" id="correct10"><label>C. Rootkits</label>
+                <br>
+                <br>
+                <input class="click" type="submit" name="submit" value="Submit" onclick="result()">
+                <br>
+                <p class="js-correct-answer"></p>
+                <script>
+                    function result() {
+                        let score = 0;
+                        if (document.getElementById('correct1').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct2').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct3').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct4').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct5').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct6').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct7').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct8').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct9').checked)
+                        {
+                            score++;
+                        }
+                        if (document.getElementById('correct10').checked)
+                        {
+                            score++;
+                        }
+                        document.querySelector('.js-score').innerHTML =`Your Score is: ${score}`;
+                        document.querySelector('.js-correct-answer').innerHTML = `Correct Answer: Q1. A Q2.A Q3.B Q4.A Q5.B Q6.A Q7.C Q8.B Q9.C Q10.C`;
+                    }
+                </script>   
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="bon">
+        <p>Copyright @2024 Com<span>Security</span>
+            <div class="bons">
+                <a href="https://www.facebook.com/profile.php?id=61559777832365&sk=about"><img src="image/facebook (2).png" alt=""></a>
+                <a href="mailto:cmscrtbon@gmail.com"><img src="image/mail (2).png" alt=""></a>
+                <a href="https://www.instagram.com/comsecurity2024/"><img src="image/instagram (2).png" alt=""></a>
+            </div>
+        <div class="bon-content">
+            <a href="homes.html#homes">Home</a>
+            <a href="homes.html#abouts">About</a>
+            <a href="homes.html#courses">Module</a>
+            <a href="homes.html#exercises">Exercises</a>
+        </div>
+    </div>
+</footer>
+</html>
